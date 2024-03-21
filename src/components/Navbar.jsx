@@ -6,15 +6,15 @@ const Navbar = () => {
           <li className="">
             <a
               href="/"
-              className="relative block px-2 py-1 md:px-3 md:py-2 transition hover:text-indigo-500"
+              className="relative block px-2 py-1 md:px-3 md:py-2 transition hover:text-blue-500"
             >
               Home
             </a>
           </li>
           <li className="">
             <a
-              href="#herosection"
-              className="relative block px-2 py-1 md:px-3 md:py-2 transition hover:text-indigo-500"
+              href="#about"
+              className="relative block px-2 py-1 md:px-3 md:py-2 transition hover:text-blue-500"
             >
               About
             </a>
@@ -22,7 +22,7 @@ const Navbar = () => {
           <li className="">
             <a
               href="#ProjectsSection"
-              className="relative block px-2 py-1 md:px-3 md:py-2 transition hover:text-indigo-500"
+              className="relative block px-2 py-1 md:px-3 md:py-2 transition hover:text-blue-500"
             >
               Projects
             </a>
@@ -30,7 +30,7 @@ const Navbar = () => {
           <li className="">
             <a
               href="#contact"
-              className="relative block px-2 py-1 md:px-3 md:py-2 transition hover:text-indigo-500"
+              className="relative block px-2 py-1 md:px-3 md:py-2 transition hover:text-blue-500"
             >
               Contact
             </a>

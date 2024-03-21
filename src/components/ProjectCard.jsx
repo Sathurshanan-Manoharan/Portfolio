@@ -49,7 +49,10 @@ const ProjectCard = ({ project }) => {
       </div>
       <div className="p-6">
         <h3 className="text-2xl font-semibold text-white mb-2">{title}</h3>
-        <p className="text-lg text-gray-400 mb-4" style={{ maxWidth: "600px" }}>
+        <p
+          className="text-justify text-lg text-gray-400 mb-4"
+          style={{ maxWidth: "600px" }}
+        >
           {description}
         </p>
         <a

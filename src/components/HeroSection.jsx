@@ -1,69 +1,49 @@
 import { useEffect, useRef } from "react";
 import Typed from "typed.js";
-import myImage from "../assets/Sathu.png";
+import myImage from "../assets/Sathuu.png";
+import { FaArrowDown } from "react-icons/fa";
+import Typewriter from "typewriter-effect";
 
 const HeroSection = () => {
-  const typedRef = useRef(null);
-
-  useEffect(() => {
-    const options = {
-      strings: ["Hello! I'm Sathurshanan Manoaharan"],
-      typeSpeed: 60,
-      loop: true,
-      backDelay: 1500,
-      backSpeed: 40,
-
-      css: `
-        .highlight {
-          color: green; // Change the color as desired
-        }
-      `,
-      onStringTyped: function (index, self) {
-        self.toggleClass("highlight");
-      },
-    };
-
-    if (typedRef.current) {
-      const typed = new Typed(typedRef.current, options);
-      // Cleanup on unmount
-      return () => {
-        typed.destroy();
-      };
-    }
-  }, []);
+  const handleScrollDown = () => {
+    window.scrollTo({
+      top: window.innerHeight,
+      behavior: "smooth",
+    });
+  };
 
   return (
-    <div
-      id="herosection"
-      className="min-h-screen flex flex-col md:flex-row items-center justify-center bg-gray-900 text-white px-8 md:pl-20 md:pr-20 pt-20 md:pt-0"
-    >
-      <div
-        className="max-w-7xl mx-auto px-4 py-3 md:flex md:justify-between md:items-center"
-        style={{ margin: "0 20px" }}
-      >
-        <div style={{ flex: "1" }}>
-          <div className="max-w-4xl md:w-full md:pr-8">
-            <div className="typed-container text-2xl lg:text-4xl mb-4 font-bold">
-              <span ref={typedRef}></span>
-            </div>
-            <p className="text-base md:text-lg lg:text-xl mb-6">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-              dapibus, tortor eget consequat ultrices, ipsum ipsum tristique
-              enim, eget mattis purus mauris vel tortor.
-            </p>
-
-            <button className="bg-transparent text-white hover:bg-white hover:text-gray-900 transition duration-500 text-2xl font-bold py-2 px-4 rounded-full shadow-lg border border-white">
-              Explore More
-            </button>
-          </div>
-        </div>
-        <div className="md:w-1/2 flex justify-end">
-          <img
-            src={myImage}
-            alt="Your Image"
-            className="rounded-full shadow-lg md:w-96"
+    <div className="min-h-screen flex flex-col justify-center items-center bg-gray-900 text-white pt-20">
+      <div className="text-center mb-16">
+        <h1 className="text-4xl md:text-6xl font-bold mb-4">Welcome!</h1>
+        <div className="text-3xl md:text-4xl mb-8">
+          <Typewriter
+            onInit={(typewriter) => {
+              typewriter
+                .typeString("I'm ")
+                .typeString(
+                  "<span class='text-blue-600 font-semibold'>Sathurshanan Manoaharan</span>"
+                )
+                // .typeString(" here")
+                .start();
+            }}
           />
         </div>
+        <img
+          src={myImage}
+          alt="Your Image"
+          className="rounded-full shadow-lg w-40 md:w-64 mt-8 md:mt-0 border-2 border-gray-200 mx-auto mb-4"
+        />
+        <p className="text-xl md:text-xl mb-2">
+          I build cool stuff and solve interesting problems.
+        </p>
+
+        <button
+          onClick={handleScrollDown}
+          className="bg-transparent text-white hover:bg-white hover:text-gray-900 transition duration-500 text-lg md:text-xl font-bold py-3 px-6 rounded-full shadow-lg border border-white mt-8"
+        >
+          Explore More <FaArrowDown className="inline-block ml-2" />
+        </button>
       </div>
     </div>
   );

@@ -24,7 +24,7 @@ const ContactForm = () => {
 
     setTimeout(() => {
       setIsModalOpen(false);
-    }, 3000); 
+    }, 3000);
   };
 
   return (
@@ -51,7 +51,7 @@ const ContactForm = () => {
                 name="name"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                className="w-full px-3 py-2 border rounded-full text-gray-300 bg-gray-800 focus:outline-none focus:border-indigo-500"
+                className="w-full px-3 py-2 border rounded-full text-gray-300 bg-gray-800 focus:outline-none focus:border-blue-500"
                 required
               />
             </div>
@@ -68,7 +68,7 @@ const ContactForm = () => {
                 name="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="w-full px-3 py-2 border rounded-full text-gray-300 bg-gray-800 focus:outline-none focus:border-indigo-500"
+                className="w-full px-3 py-2 border rounded-full text-gray-300 bg-gray-800 focus:outline-none focus:border-blue-500"
                 required
               />
             </div>
@@ -85,7 +85,7 @@ const ContactForm = () => {
                 name="subject"
                 value={subject}
                 onChange={(e) => setSubject(e.target.value)}
-                className="w-full px-3 py-2 border rounded-full text-gray-300 bg-gray-800 focus:outline-none focus:border-indigo-500"
+                className="w-full px-3 py-2 border rounded-full text-gray-300 bg-gray-800 focus:outline-none focus:border-blue-500"
                 required
               />
             </div>
@@ -102,14 +102,14 @@ const ContactForm = () => {
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
                 rows="4"
-                className="w-full px-3 py-2 border rounded-full text-gray-300 bg-gray-800 focus:outline-none focus:border-indigo-500"
+                className="w-full px-3 py-2 border rounded-2xl text-gray-300 bg-gray-800 focus:outline-none focus:border-blue-500"
                 required
               ></textarea>
             </div>
             <div className="text-center">
               <button
                 type="submit"
-                className="bg-transparent text-white hover:bg-white hover:text-gray-900 transition duration-500 text-xl py-2 px-4 rounded-full shadow-lg border border-white"
+                className="bg-transparent text-white hover:bg-white hover:text-gray-900 transition duration-500 text-xl mt-4 py-2 px-6 rounded-full shadow-lg border border-white"
               >
                 Submit
               </button>
