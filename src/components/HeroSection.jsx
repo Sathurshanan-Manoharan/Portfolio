@@ -1,5 +1,3 @@
-import { useEffect, useRef } from "react";
-import Typed from "typed.js";
 import myImage from "../assets/Sathuu.png";
 import { FaArrowDown } from "react-icons/fa";
 import Typewriter from "typewriter-effect";

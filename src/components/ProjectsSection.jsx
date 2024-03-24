@@ -4,7 +4,7 @@ const ProjectsSection = () => {
   const projects = [
     {
       id: 1,
-      title: "Project 1",
+      title: "Attendify",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus, tortor eget consequat ultrices, ipsum ipsum tristique enim, eget mattis purus mauris vel tortor.",
       imageUrl: projectImage,
@@ -12,7 +12,7 @@ const ProjectsSection = () => {
     },
     {
       id: 2,
-      title: "Project 2",
+      title: "Personal Portfolio",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus, tortor eget consequat ultrices, ipsum ipsum tristique enim, eget mattis purus mauris vel tortor.",
       imageUrl: projectImage,
