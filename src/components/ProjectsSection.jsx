@@ -1,54 +1,65 @@
 import ProjectCard from "./ProjectCard";
 import projectImage from "../assets/Project.png";
+import Attendify from "../assets/Attendify Blue.png";
+import Ceylon from "../assets/Ceylon.png";
+import Porfolio from "../assets/Porfolio.png";
+import shopping from "../assets/shopping.jpg";
+import moviehublogo from "../assets/moviehublogo.jpg";
+import food from "../assets/food.jpg";
+
 const ProjectsSection = () => {
   const projects = [
     {
       id: 1,
       title: "Attendify",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus, tortor eget consequat ultrices, ipsum ipsum tristique enim, eget mattis purus mauris vel tortor.",
-      imageUrl: projectImage,
-      githubLink: "https://github.com",
+        "Attendify is a web based solution for tracking and managing attedance. It is a full stack application built using MERN stack. It used the FFID technology to record attedance.",
+      imageUrl: Attendify,
+      githubLink:
+        "https://github.com/Sathurshanan-Manoharan/attendify-frontend",
     },
     {
       id: 2,
       title: "Personal Portfolio",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus, tortor eget consequat ultrices, ipsum ipsum tristique enim, eget mattis purus mauris vel tortor.",
-      imageUrl: projectImage,
-      githubLink: "https://github.com",
+        "A perfolio website that showcases my skills, projects and experience. It is built using React and Tailwind CSS. It is a responsive website that looks great on all devices.",
+      imageUrl: Porfolio,
+      githubLink: "https://github.com/Sathurshanan-Manoharan/Portfolio",
     },
     {
       id: 3,
-      title: "Project 3",
+      title: "Ceylon Trotters",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus, tortor eget consequat ultrices, ipsum ipsum tristique enim, eget mattis purus mauris vel tortor.",
-      imageUrl: projectImage,
-      githubLink: "https://github.com",
+        "Ceylon Trotters is website that showcases the beauty of Sri Lanka and offers tourist packages and services to users.",
+      imageUrl: Ceylon,
+      githubLink:
+        "https://github.com/Sathurshanan-Manoharan/Ceylon-Trotters-Website",
     },
     {
       id: 4,
-      title: "Project 4",
+      title: "Shopping management system",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus, tortor eget consequat ultrices, ipsum ipsum tristique enim, eget mattis purus mauris vel tortor.",
-      imageUrl: projectImage,
-      githubLink: "https://github.com",
+        "This system is built using Java. There are two versions: one for the manager and one for the customer. The customer version features a GUI made using Swing.",
+      imageUrl: shopping,
+      githubLink:
+        "https://github.com/Sathurshanan-Manoharan/Westminster-online-shopping-system",
     },
     {
       id: 5,
-      title: "Project 5",
+      title: "Movie Hub",
       description:
-        "DLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus, tortor eget consequat ultrices, ipsum ipsum tristique enim, eget mattis purus mauris vel tortor.",
-      imageUrl: projectImage,
-      githubLink: "https://github.com",
+        "Movie Hub is a web application that allows users to search for movies and view details about them. It uses the OMDB API to fetch movie data. It is built using React.",
+      imageUrl: moviehublogo,
+      githubLink: "https://github.com/Sathurshanan-Manoharan/Movie-Hub",
     },
     {
       id: 6,
-      title: "Project 5",
+      title: "Hotel Management System",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus, tortor eget consequat ultrices, ipsum ipsum tristique enim, eget mattis purus mauris vel tortor.",
-      imageUrl: projectImage,
-      githubLink: "https://github.com",
+        "A basic Java program, which manages the food queues in a hotel. It uses the concepts of OOP and file handling.",
+      imageUrl: food,
+      githubLink:
+        "https://github.com/Sathurshanan-Manoharan/Food-Queue-Management-System",
     },
   ];
 
