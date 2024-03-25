@@ -13,7 +13,7 @@ const ProjectsSection = () => {
       id: 1,
       title: "Attendify",
       description:
-        "Attendify is a web based solution for tracking and managing attedance. It is a full stack application built using MERN stack. It used the FFID technology to record attedance.",
+        "Attendify is a web based solution for tracking and managing attedance. It is a full stack application built using MERN stack. It uses the RFID technology to record attedance.",
       imageUrl: Attendify,
       githubLink:
         "https://github.com/Sathurshanan-Manoharan/attendify-frontend",
