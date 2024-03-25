@@ -61,13 +61,13 @@ const AboutSection = () => {
                 <FaIcons.FaInstagram size={30} />
               </a>
               <a
-                href="#"
+                href="https://www.facebook.com/profile.php?id=61553811906733"
                 className="text-white hover:text-blue-500 transition duration-500"
               >
                 <FaIcons.FaFacebook size={30} />
               </a>
               <a
-                href="#"
+                href="https://twitter.com/sathurshanan_m"
                 className="text-white hover:text-blue-400 transition duration-500"
               >
                 <FaIcons.FaTwitter size={30} />
@@ -82,14 +82,6 @@ const AboutSection = () => {
               <TechPill icon={<FaIcons.FaFigma />} text="Figma" />
               <TechPill icon={<FaIcons.FaDatabase />} text="MongoDB" />
               <TechPill icon={<FaIcons.FaDatabase />} text="SQL" />
-            </div>
-            <div className="text-center md:text-center mt-5 md:mt-8">
-              <a
-                href="#ProjectsSection"
-                className="bg-transparent text-white hover:bg-white hover:text-gray-900 transition duration-500 text-2xl font-bold py-2 px-4 rounded-full shadow-lg border border-white inline-block md:mx-0"
-              >
-                Learn More
-              </a>
             </div>
           </div>
         </div>
